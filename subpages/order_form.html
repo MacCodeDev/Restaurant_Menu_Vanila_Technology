@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eagle Manufacture - Order</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/resources/logo.ico" />
+  </head>
+  <body>
+    <header>
+      <div id="nav-placeholder"></div>
+    </header>
+    <main>
+      <section>
+        <h2>Place Your Order</h2>
+        <form action="../restaurant_menu.html" method="get">
+          <label for="burger">Quantity of burgers - </label
+          ><input
+            type="number"
+            id="burger"
+            name="burger"
+            min="0"
+            max="40"
+            value="0"
+            required
+          />
+          <br />
+          <label for="pizza">Quantity of pizza - </label
+          ><input
+            type="number"
+            id="pizza"
+            name="pizza"
+            min="0"
+            max="40"
+            value="0"
+            required
+          />
+          <br />
+          <label for="pasta">Quantity of pasta - </label
+          ><input
+            type="number"
+            id="pasta"
+            name="pasta"
+            min="0"
+            max="40"
+            value="0"
+            required
+          />
+          <br />
+          <label for="salad">Quantity of salad - </label
+          ><input
+            type="number"
+            id="salad"
+            name="salad"
+            min="0"
+            max="40"
+            value="0"
+            required
+          />
+          <br />
+          <label for="delivery">Type of delivery:</label>
+          <br />
+          <input type="radio" id="delivery" name="delivery" value="delivery" />
+          Delivery
+          <input type="radio" id="pickup" name="delivery" value="pickup" />
+          Pickup
+          <br />
+          <label for="special-requests">Special requests:</label>
+          <br />
+          <textarea
+            name="special-requests"
+            id="special-requests"
+            cols="30"
+            rows="10"
+            placeholder="Any special requests?"
+          ></textarea>
+          <br />
+          <input type="submit" value="Go To Checkout" />
+        </form>
+      </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="../scripts/loadNav.js"></script>
+    <script src="../scripts/loadFooter.js"></script>
+  </body>
+</html>
